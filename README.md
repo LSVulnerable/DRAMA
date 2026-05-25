@@ -48,7 +48,7 @@ DRAMA uses a three-layer design:
 git clone --branch wah https://github.com/xavierpuigf/virtualhome.git envs/virtualhome
 ```
 
-2. Download the Linux x86-64 simulator executable from the VirtualHome release page and place it under:
+2. Download the Linux x86-64 [simulator](http://virtual-home.org//release/simulator/v2.0/v2.3.0/linux_exec.zip) executable and place it under:
 
 ```text
 envs/executable/
@@ -73,15 +73,6 @@ Edit `envs/cwah/scripts/llm_configs.json` with your API key or local model endpo
     "model": "gpt-4.1"
   }
 }
-```
-
-Organization instructions are stored in `envs/cwah/testing_agents/organization_instructions.csv`.
-
-Example:
-
-```csv
-code,instruction
-3,Agent 1 is the leader to coordinate the task.
 ```
 
 ## Run
