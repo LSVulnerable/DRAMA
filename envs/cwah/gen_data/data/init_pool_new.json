@@ -1,0 +1,79 @@
+{
+    "setup_table": 
+    {   
+        "plate": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "waterglass": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "wineglass": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "cutleryfork": {"min_num":0, "max_num":4, "env_max_num": 4}
+    },
+
+    "clean_table":
+    {
+        "plate": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "waterglass": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "wineglass": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "cutleryfork": {"min_num":0, "max_num":4, "env_max_num": 4}
+    },
+
+    "put_dishwasher":
+    {
+        "plate": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "waterglass": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "wineglass": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "cutleryfork": {"min_num":0, "max_num":4, "env_max_num": 4}
+    },
+
+    "unload_dishwasher":
+    {
+        "plate": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "waterglass": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "wineglass": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "cutleryfork": {"min_num":0, "max_num":4, "env_max_num": 4}
+    },
+
+
+    "put_fridge":
+    {
+        "cupcake": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "juice": {"min_num":0, "max_num":4, "env_max_num": 5},
+        "pancake": {"min_num":0, "max_num":3, "env_max_num": 4},
+        "poundcake": {"min_num":0, "max_num":3, "env_max_num": 4},
+        "wine": {"min_num":0, "max_num":3, "env_max_num": 4},
+        "pudding": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "apple": {"min_num":0, "max_num":4, "env_max_num": 4}   
+    },
+
+    "prepare_food":
+    {
+        "cupcake": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "juice": {"min_num":0, "max_num":3, "env_max_num": 4},
+        "pancake": {"min_num":0, "max_num":3, "env_max_num": 4},
+        "poundcake": {"min_num":0, "max_num":3, "env_max_num": 4},
+        "wine": {"min_num":0, "max_num":3, "env_max_num": 4},
+        "pudding": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "apple": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "coffeepot": {"min_num":0, "max_num":3, "env_max_num": 4}
+    },
+
+    "read_book": 
+    {
+        "book": {"min_num":1, "max_num":3, "env_max_num": 3},
+        "cupcake": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "juice": {"min_num":0, "max_num":3, "env_max_num": 4},
+        "wine": {"min_num":0, "max_num":3, "env_max_num": 4},
+        "pudding": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "apple": {"min_num":0, "max_num":4, "env_max_num": 4}
+    },
+
+    "watch_tv":
+    {
+        "cupcake": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "juice": {"min_num":0, "max_num":3, "env_max_num": 4},
+        "wine": {"min_num":0, "max_num":3, "env_max_num": 4},
+        "pudding": {"min_num":0, "max_num":4, "env_max_num": 4},
+        "apple": {"min_num":0, "max_num":4, "env_max_num": 4}
+    }
+}
+
+
+

@@ -1,0 +1,30 @@
+type,prompt
+base,"I'm $AGENT_NAME$. I'm in a hurry to finish the housework with my friends $TEAMMATE_NAME$ together. Given our shared goal, dialogue history, and my progress and previous actions, please help me choose the best available action to achieve the goal as soon as possible.
+Hard requirement:
+- The ""action"" you output MUST be exactly one of the lines listed under ""Available actions"" below. Copy it verbatim (including brackets, object ids, and punctuation). Do NOT invent actions. If no listed action is appropriate, use ""None"".
+
+Constraints and policy:
+- I can hold up to 2 objects.
+- Priority (strict):
+  1) If a SubGoal object is visible and reachable, Take/Grab it.
+  2) Else if any Goal object is visible and reachable, Take/Grab it.
+  3) Else Navigate/Explore to the room with the highest SubGoal prior.
+- If target is inside a container, Open then Take.
+- If multiple targets are reachable, pick up up to 2.
+- If there are other agents in the same room with you, Take\Grab the subgoal object first to avoid conflict with other agents.
+- Do NOT choose an action that targets the same object id or container id as any teammate in Previous actions (most recent step). Pick a different target/action instead.
+- If my agent number is larger than a teammate in the same room (e.g., Agent_2 when Agent_1 is present), assume earlier-index agents may choose the same target; proactively pick a different object/container or a different room to avoid taking the same action.
+- Tie-break: fewer steps; prefer immediate Take/Grab.
+
+Organization instructions: $ORGANIZATION_INSTRUCTIONS$
+Goal: $GOAL$
+SubGoal: $SUBGOAL$
+Progress: $PROGRESS$
+Previous actions: $ACTION_HISTORY$
+Available actions:
+$AVAILABLE_ACTIONS$
+Response format:
+{""thoughts"" : ""thoughts content"", 
+""action"" : ""choose one action from the available actions above or None""}
+Validation:
+- The ""action"" must be identical to one of the strings under ""Available actions"" (or ""None"" if nothing applies). Do not output any other string."
